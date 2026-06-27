@@ -1,0 +1,28 @@
+# Agent & IDE configuration (local per-user setup)
+.claude/
+.cursor/
+.kiro/
+.oioxo/
+.trae/
+.vscode/
+.mcp.json
+
+# GitHub Copilot instructions (local copies; source is .github/instructions/)
+.github/copilot-instructions.md
+
+# Personal project notes (not part of the open-source distribution)
+새 텍스트 문서.txt
+쓸만한걸로 만들기 구현 결과.md
+현재 시스템 제한 목록.md
+Enterprise Grade 구현 완료.md
+scanissue.md
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs and runtime data
+*.log

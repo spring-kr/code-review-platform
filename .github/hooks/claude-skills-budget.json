@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "powershell": "$body = [Console]::In.ReadToEnd(); try { Invoke-WebRequest -UseBasicParsing -Uri 'http://127.0.0.1:1400/hook/budget?agent=copilot&cwd=c%3A%5CUsers%5C%EA%B9%80%ED%9A%A8%EC%A7%84%5CDownloads%5Ccode-review-platform' -Method POST -Headers @{ 'Content-Type' = 'application/json' } -Body $body | Out-Null } catch { }",
+        "timeoutSec": 8
+      }
+    ],
+    "userPromptSubmitted": [
+      {
+        "type": "command",
+        "powershell": "$body = [Console]::In.ReadToEnd(); try { Invoke-WebRequest -UseBasicParsing -Uri 'http://127.0.0.1:1400/hook/budget?agent=copilot&cwd=c%3A%5CUsers%5C%EA%B9%80%ED%9A%A8%EC%A7%84%5CDownloads%5Ccode-review-platform' -Method POST -Headers @{ 'Content-Type' = 'application/json' } -Body $body | Out-Null } catch { }",
+        "timeoutSec": 8
+      }
+    ]
+  }
+}
